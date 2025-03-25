@@ -7,8 +7,8 @@
 **********************************************
 [rewrite_local]
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/.+\/offerings|product_entitlement_mapping) url script-request-header https://raw.githubusercontent.com/liulongxuan/QX/blob/main/revenuecatinfo.js
-^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/product_entitlement_mapping$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/main/mapping.js
-^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/subscribers\/.+\/offerings$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/main/offerings.js
+^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/product_entitlement_mapping$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/blob/main/mapping.js
+^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/subscribers\/.+\/offerings$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/blob/main/offerings.js
 [mitm] 
 hostname = api.revenuecat.com,api.rc-backup.com
 *******************************/
