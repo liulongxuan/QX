@@ -5,7 +5,6 @@
 频道地址：https://t.me/afengye
 使用声明：️仅供学习交流, 🈲️商业用途
 **********************************************
-[rewrite_local]
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/(subscribers\/.+\/offerings|product_entitlement_mapping) url script-request-header https://raw.githubusercontent.com/liulongxuan/QX/main/header.js
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/product_entitlement_mapping$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/main/mapping.js
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/v1\/subscribers\/.+\/offerings$ url script-response-body https://raw.githubusercontent.com/liulongxuan/QX/main/offerings.js
